@@ -1,5 +1,103 @@
 return {
 	Weapons = {
+
+		
+			['WEAPON_DD11_B'] = {
+				label = 'DDM4V7 11.5 - Black',
+				weight = 3100,
+				durability = 0.03,
+				ammoname = 'ammo-rifle',
+				client = {
+					image = 'dd11_b.png',
+				}
+			},
+	
+			['WEAPON_DD11_OD'] = {
+				label = 'DDM4V7 11.5 - OD',
+				weight = 3100,
+				durability = 0.03,
+				ammoname = 'ammo-rifle',
+				client = {
+					image = 'dd11_od.png',
+				}
+			},
+			
+			['WEAPON_DD11_C'] = {
+				label = 'DDM4V7 11.5 - Coyote',
+				weight = 3100,
+				durability = 0.03,
+				ammoname = 'ammo-rifle',
+				client = {
+					image = 'dd11_c.png',
+				}
+			},
+	
+			----DDM4V7 14.5
+	
+			['WEAPON_DD14_B'] = {
+				label = 'DDM4V7 14.5 - Black',
+				weight = 3100,
+				durability = 0.03,
+				ammoname = 'ammo-rifle',
+				client = {
+					image = 'dd14_b.png',
+				}
+			},
+	
+			['WEAPON_DD14_OD'] = {
+				label = 'DDM4V7 14.5 - OD',
+				weight = 3100,
+				durability = 0.03,
+				ammoname = 'ammo-rifle',
+				client = {
+					image = 'dd14_od.png',
+				}
+			},
+			
+			['WEAPON_DD14_C'] = {
+				label = 'DDM4V7 14.5 - Coyote',
+				weight = 3100,
+				durability = 0.03,
+				ammoname = 'ammo-rifle',
+				client = {
+					image = 'dd14_c.png',
+				}
+			},
+	
+	
+			----DDM4V7 16
+	
+			['WEAPON_DD16_B'] = {
+				label = 'DDM4V7 16 - Black',
+				weight = 3100,
+				durability = 0.03,
+				ammoname = 'ammo-rifle',
+				client = {
+					image = 'dd16_b.png',
+				}
+			},
+	
+			['WEAPON_DD16_OD'] = {
+				label = 'DDM4V7 16 - OD',
+				weight = 3100,
+				durability = 0.03,
+				ammoname = 'ammo-rifle',
+				client = {
+					image = 'dd16_od.png',
+				}
+			},
+			
+			['WEAPON_DD16_C'] = {
+				label = 'DDM4V7 16 - Coyote',
+				weight = 3100,
+				durability = 0.03,
+				ammoname = 'ammo-rifle',
+				client = {
+					image = 'dd16_c.png',
+				}
+			},
+
+
 		['WEAPON_BATTLERIFLE'] = {
 			label = 'Battle Rifle',
 			weight = 3300,
@@ -457,6 +555,18 @@ return {
 			weight = 1000,
 			durability = 0.1,
 		},
+		
+		['WEAPON_COLBATON'] = {
+			label = 'Colapsable Baton',
+			weight = 1150,
+			durability = 0.1,
+		},
+
+		['WEAPON_PROLASER4'] = {
+			label = 'Pro Laser 4',
+			weight = 1000,
+			durability = 0.1,
+		},
 
 		['WEAPON_PETROLCAN'] = {
 			label = 'Jerry Can',
@@ -479,6 +589,13 @@ return {
 		['WEAPON_PISTOL'] = {
 			label = 'Pistol',
 			weight = 1130,
+			durability = 0.1,
+			ammoname = 'ammo-9',
+		},
+
+		['WEAPON_GLOCK20'] = {
+			label = 'Glock 20Pistol',
+			weight = 1200,
 			durability = 0.1,
 			ammoname = 'ammo-9',
 		},
@@ -525,6 +642,13 @@ return {
 		['WEAPON_PUMPSHOTGUN_MK2'] = {
 			label = 'Pump Shotgun MK2',
 			weight = 3200,
+			durability = 0.1,
+			ammoname = 'ammo-shotgun'
+		},
+
+		['WEAPON_FM1_BENELLIM4'] = {
+			label = 'Benelli M4 Shotgun',
+			weight = 3400,
 			durability = 0.1,
 			ammoname = 'ammo-shotgun'
 		},
@@ -604,6 +728,12 @@ return {
 			throwable = true,
 		},
 
+		['WEAPON_FLASHBANG'] = {
+			label = 'Flashbang Grenade',
+			weight = 600,
+			throwable = true,
+		},
+
 		['WEAPON_SNIPERRIFLE'] = {
 			label = 'Sniper Rifle',
 			weight = 5000,
@@ -658,7 +788,7 @@ return {
 		},
 
 		['WEAPON_STUNGUN'] = {
-			label = 'Tazer',
+			label = 'X23 Tazer',
 			weight = 227,
 			durability = 0.1,
 		},
@@ -730,6 +860,8 @@ return {
 					`COMPONENT_AT_PI_FLSH`,
 					`COMPONENT_AT_PI_FLSH_02`,
 					`COMPONENT_AT_PI_FLSH_03`,
+					`COMPONENT_FM1_BENELLIM4_FLSH_01`,
+					`COMPONENT_GLOCK20_FLSH_01`,
 				},
 				usetime = 2500
 			}
@@ -1775,6 +1907,582 @@ return {
 					`COMPONENT_SMG_MK2_CAMO_IND_01`,
 					`COMPONENT_SNSPISTOL_MK2_CAMO_IND_01`,
 					`COMPONENT_SPECIALCARBINE_MK2_CAMO_IND_01`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_scope_ddm4_b'] = {
+	label = 'Aimpoint Pro Red Dot Sight (Black)',
+	type = 'sight',
+	weight = 280,
+	client = {
+		image = 'pro_od.png',
+		component = {
+			`COMPONENT_PRO_B`,
+		},
+		usetime = 2500
+	}
+	},
+	
+	['at_scope_ddm4_odw'] = {
+	label = 'Aimpoint Pro Red Dot Sight (OD Wrap)',
+	type = 'sight',
+	weight = 280,
+	client = {
+		image = 'pro_b.png',
+		component = {
+			`COMPONENT_PRO_OD`,
+		},
+		usetime = 2500
+	}
+	},
+	
+	['at_scope_ddm4_cw'] = {
+	label = 'Aimpoint Pro Red Dot Sight (Coyote Wrap)',
+	type = 'sight',
+	weight = 280,
+	client = {
+		image = 'pro_c.png',
+		component = {
+			`COMPONENT_PRO_C`,
+		},
+		usetime = 2500
+	}
+	},
+
+
+		---- EOTECH
+
+
+		['at_scope_ddm4_holo_b'] = {
+			label = 'EOTech EXPS3-4 Holographic Sight (Black)',
+			type = 'sight',
+			weight = 280,
+			client = {
+				image = 'exps34_b.png',
+				component = {
+					`COMPONENT_EXPS34_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_scope_ddm4_holo_c'] = {
+			label = 'EOTech EXPS3-4 Holographic Sight (Coyote)',
+			type = 'sight',
+			weight = 280,
+			client = {
+				image = 'exps34_c.png',
+				component = {
+					`COMPONENT_EXPS34_C`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_scope_ddm4_hhsvo_b'] = {
+			label = 'EOTech HHS V Holographic Sight with Magnifier Open (Black)',
+			type = 'sight',
+			weight = 280,
+			client = {
+				image = 'hhsvo_b.png',
+				component = {
+					`COMPONENT_HHSVO_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_scope_ddm4_hhsvo_c'] = {
+			label = 'EOTech HHS V Holographic Sight with Magnifier Open (Coyote)',
+			type = 'sight',
+			weight = 280,
+			client = {
+				image = 'hhsvo_c.png',
+				component = {
+					`COMPONENT_HHSVO_C`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_scope_ddm4_hhsvc_b'] = {
+			label = 'EOTech HHS V Holographic Sight with Magnifier Closed (Black)',
+			type = 'sight',
+			weight = 280,
+			client = {
+				image = 'hhsvc_b.png',
+				component = {
+					`COMPONENT_HHSVC_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_scope_ddm4_hhsvc_c'] = {
+			label = 'EOTech HHS V Holographic Sight with Magnifier Closed (Coyote)',
+			type = 'sight',
+			weight = 280,
+			client = {
+				image = 'hhsvc_c.png',
+				component = {
+					`COMPONENT_HHSVC_C`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_scope_ddm4_vudu'] = {
+			label = 'EOTech Vudu 1x',
+			type = 'sight',
+			weight = 280,
+			client = {
+				image = 'vudu_1x.png',
+				component = {
+					`COMPONENT_VUDU_1X`,
+				},
+				usetime = 2500
+			}
+		},
+
+
+		----------DDM4 Magazines
+
+		['at_clip_pmag30_b'] = {
+			label = 'PMAG 30r (Black)',
+			type = 'magazine',
+			weight = 280,
+			client = {
+				image = 'pmag30_b.png',
+				component = {
+					`COMPONENT_PMAG30_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_clip_pmag30_c'] = {
+			label = 'PMAG 30r (Coyote)',
+			type = 'magazine',
+			weight = 280,
+			client = {
+				image = 'pmag30_c.png',
+				component = {
+					`COMPONENT_PMAG30_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_clip_pmag40_b'] = {
+			label = 'PMAG 40r (Black)',
+			type = 'magazine',
+			weight = 280,
+			client = {
+				image = 'pmag40_b.png',
+				component = {
+					`COMPONENT_PMAG40_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_clip_pmag30r_b'] = {
+			label = 'PMAG 30r with Rangerplate (Black)',
+			type = 'magazine',
+			weight = 280,
+			client = {
+				image = 'pmagranger_b.png',
+				component = {
+					`COMPONENT_PMAGRANGER_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_clip_pmag60rm_b'] = {
+			label = 'PMAG 60r [Maglinked] (Black)',
+			type = 'magazine',
+			weight = 280,
+			client = {
+				image = 'pmaglink_b.png',
+				component = {
+					`COMPONENT_PMAGLINK_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_clip_pmag60rm_c'] = {
+			label = 'PMAG 60r [Maglinked] (Coyote)',
+			type = 'magazine',
+			weight = 280,
+			client = {
+				image = 'pmaglink_c.png',
+				component = {
+					`COMPONENT_PMAGLINK_C`,
+				},
+				usetime = 2500
+			}
+		},
+
+
+		---- Flashlights & PEQ
+
+		['at_sfs11_b'] = {
+			label = '11.5 SureFire ScoutLight with single switch',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				image = 'sfs11_b.png',
+				component = {
+					`COMPONENT_SFS11_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_sfs14_b'] = {
+			label = '14.5 SureFire ScoutLight with single switch',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				image = 'sfs14_b.png',
+				component = {
+					`COMPONENT_SFS14_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_sfs16_b'] = {
+			label = '16 SureFire ScoutLight with single switch',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				image = 'sfs16_b.png',
+				component = {
+					`COMPONENT_SFS16_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_peq11_b'] = {
+			label = '11.5 SureFire ScoutLight & PEQ-15A with double switch (Black)',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				image = 'peq11_b.png',
+				component = {
+					`COMPONENT_PEQ11_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_peq11_c'] = {
+			label = '11.5 SureFire ScoutLight & PEQ-15A with double switch (Coyote)',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				image = 'peq11_c.png',
+				component = {
+					`COMPONENT_PEQ11_C`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_peq14_b'] = {
+			label = '14.5 SureFire ScoutLight & PEQ-15A with double switch (Black)',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				image = 'peq14_b.png',
+				component = {
+					`COMPONENT_PEQ14_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_peq14_c'] = {
+			label = '14.5 SureFire ScoutLight & PEQ-15A with double switch (Coyote)',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				image = 'peq14_c.png',
+				component = {
+					`COMPONENT_PEQ14_C`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_peq16_b'] = {
+			label = '16 SureFire ScoutLight & PEQ-15A with double switch (Black)',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				image = 'peq16_b.png',
+				component = {
+					`COMPONENT_PEQ16_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_peq16_c'] = {
+			label = '16 SureFire ScoutLight & PEQ-15A with double switch (Coyote)',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				image = 'peq16_c.png',
+				component = {
+					`COMPONENT_PEQ16_C`,
+				},
+				usetime = 2500
+			}
+		},
+
+		---- Flashlights & PEQ
+
+		['at_sfs11_b'] = {
+			label = '11.5 SureFire ScoutLight with single switch',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				image = 'sfs11_b.png',
+				component = {
+					`COMPONENT_SFS11_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_sfs14_b'] = {
+			label = '14.5 SureFire ScoutLight with single switch',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				image = 'sfs14_b.png',
+				component = {
+					`COMPONENT_SFS14_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_sfs16_b'] = {
+			label = '16 SureFire ScoutLight with single switch',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				image = 'sfs16_b.png',
+				component = {
+					`COMPONENT_SFS16_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_peq11_b'] = {
+			label = '11.5 SureFire ScoutLight & PEQ-15A with double switch (Black)',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				image = 'peq11_b.png',
+				component = {
+					`COMPONENT_PEQ11_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_peq11_c'] = {
+			label = '11.5 SureFire ScoutLight & PEQ-15A with double switch (Coyote)',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				image = 'peq11_c.png',
+				component = {
+					`COMPONENT_PEQ11_C`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_peq14_b'] = {
+			label = '14.5 SureFire ScoutLight & PEQ-15A with double switch (Black)',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				image = 'peq14_b.png',
+				component = {
+					`COMPONENT_PEQ14_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_peq14_c'] = {
+			label = '14.5 SureFire ScoutLight & PEQ-15A with double switch (Coyote)',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				image = 'peq14_c.png',
+				component = {
+					`COMPONENT_PEQ14_C`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_peq16_b'] = {
+			label = '16 SureFire ScoutLight & PEQ-15A with double switch (Black)',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				image = 'peq16_b.png',
+				component = {
+					`COMPONENT_PEQ16_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_peq16_c'] = {
+			label = '16 SureFire ScoutLight & PEQ-15A with double switch (Coyote)',
+			weight = 120,
+			type = 'flashlight',
+			client = {
+				image = 'peq16_c.png',
+				component = {
+					`COMPONENT_PEQ16_C`,
+				},
+				usetime = 2500
+			}
+		},
+
+		----- Grips
+		['at_grip_bcm_b'] = {
+			label = 'BCM Vertical Grip Mod 3 (Black)',
+			type = 'grip',
+			weight = 280,
+			client = {
+				image = 'bcm_b.png',
+				component = {
+					`COMPONENT_BCM_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_grip_bcm_od'] = {
+			label = 'BCM Vertical Grip Mod 3 (OD)',
+			type = 'grip',
+			weight = 280,
+			client = {
+				image = 'bcm_od.png',
+				component = {
+					`COMPONENT_BCM_OD`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_grip_bcm_c'] = {
+			label = 'BCM Vertical Grip Mod 3 (Coyote)',
+			type = 'grip',
+			weight = 280,
+			client = {
+				image = 'bcm_c.png',
+				component = {
+					`COMPONENT_BCM_C`,
+				},
+				usetime = 2500
+			}
+		},
+
+		----- Suppressor
+
+		['at_suppressor_11_b'] = {
+			label = '11.5 SOCOM556-RC2 Suppressor',
+			weight = 280,
+			type = 'muzzle',
+			client = {
+                image = 'at_suppressor.png',
+				component = {
+					`COMPONENT_SOCOMSUP11_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_suppressor_14_b'] = {
+			label = '14.5 SOCOM556-RC2 Suppressor',
+			weight = 280,
+			type = 'muzzle',
+			client = {
+                image = 'at_suppressor.png',
+				component = {
+					`COMPONENT_SOCOMSUP14_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_suppressor_16_b'] = {
+			label = '16 SOCOM556-RC2 Suppressor',
+			weight = 280,
+			type = 'muzzle',
+			client = {
+                image = 'at_suppressor.png',
+				component = {
+					`COMPONENT_SOCOMSUP16_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		----- Suppressor
+
+		['at_suppressor_11_b'] = {
+			label = '11.5 SOCOM556-RC2 Suppressor',
+			weight = 280,
+			type = 'muzzle',
+			client = {
+                image = 'at_suppressor.png',
+				component = {
+					`COMPONENT_SOCOMSUP11_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_suppressor_14_b'] = {
+			label = '14.5 SOCOM556-RC2 Suppressor',
+			weight = 280,
+			type = 'muzzle',
+			client = {
+                image = 'at_suppressor.png',
+				component = {
+					`COMPONENT_SOCOMSUP14_B`,
+				},
+				usetime = 2500
+			}
+		},
+
+		['at_suppressor_16_b'] = {
+			label = '16 SOCOM556-RC2 Suppressor',
+			weight = 280,
+			type = 'muzzle',
+			client = {
+                image = 'at_suppressor.png',
+				component = {
+					`COMPONENT_SOCOMSUP16_B`,
 				},
 				usetime = 2500
 			}

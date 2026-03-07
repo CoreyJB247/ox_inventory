@@ -4,9 +4,10 @@ return {
 		blip = {
 			id = 59, colour = 69, scale = 0.8
 		}, inventory = {
-			{ name = 'burger', price = 10 },
-			{ name = 'water', price = 10 },
-			{ name = 'cola', price = 10 },
+			{ name = 'burger', price = 1 },
+			{ name = 'water', price = 2 },
+			{ name = 'sprunk', price = 1 },
+			{ name = 'bandage', price = 15 },
 		}, locations = {
 			vec3(25.7, -1347.3, 29.49),
 			vec3(-3038.71, 585.9, 7.9),
@@ -37,9 +38,9 @@ return {
 		blip = {
 			id = 93, colour = 69, scale = 0.8
 		}, inventory = {
-			{ name = 'water', price = 10 },
-			{ name = 'cola', price = 10 },
-			{ name = 'burger', price = 15 },
+			{ name = 'burger', price = 1 },
+			{ name = 'water', price = 2 },
+			{ name = 'sprunk', price = 1 },
 		}, locations = {
 			vec3(1135.808, -982.281, 46.415),
 			vec3(-1222.915, -906.983, 12.326),
@@ -63,7 +64,9 @@ return {
 		blip = {
 			id = 402, colour = 69, scale = 0.8
 		}, inventory = {
-			{ name = 'lockpick', price = 10 }
+			{ name = 'lockpick', price = 10 },
+			{ name = 'phone', price = 600 },
+			{ name = 'radio', price = 100 },
 		}, locations = {
 			vec3(2748.0, 3473.0, 55.67),
 			vec3(342.99, -1298.26, 32.51)
@@ -80,7 +83,7 @@ return {
 			{ name = 'ammo-9', price = 5, },
 			{ name = 'WEAPON_KNIFE', price = 200 },
 			{ name = 'WEAPON_BAT', price = 100 },
-			{ name = 'WEAPON_PISTOL', price = 1000, metadata = { registered = true }, license = 'weapon' }
+			{ name = 'WEAPON_PISTOL', price = 1000, metadata = { registered = true } }
 		}, locations = {
 			vec3(-662.180, -934.961, 21.829),
 			vec3(810.25, -2157.60, 29.62),
@@ -108,19 +111,32 @@ return {
 		name = 'Police Armoury',
 		groups = shared.police,
 		blip = {
-			id = 110, colour = 84, scale = 0.8
+			id = 110, colour = 84, scale = 0.4
 		}, inventory = {
-			{ name = 'ammo-9', price = 5, },
-			{ name = 'ammo-rifle', price = 5, },
-			{ name = 'WEAPON_FLASHLIGHT', price = 200 },
-			{ name = 'WEAPON_NIGHTSTICK', price = 100 },
-			{ name = 'WEAPON_PISTOL', price = 500, metadata = { registered = true, serial = 'POL' }, license = 'weapon' },
-			{ name = 'WEAPON_CARBINERIFLE', price = 1000, metadata = { registered = true, serial = 'POL' }, license = 'weapon', grade = 3 },
-			{ name = 'WEAPON_STUNGUN', price = 500, metadata = { registered = true, serial = 'POL'} }
+			{ name = 'ammo-9', price = 0 },
+			{ name = 'ammo-rifle', price = 0 },
+			{ name = 'ammo-shotgun', price = 0 },
+			{ name = 'at_flashlight', price = 0 },
+			{ name = 'binoculars', price = 0 },
+			{ name = 'armour', price = 0 },
+			{ name = 'WEAPON_PROLASER4', price = 0 },
+			{ name = 'WEAPON_FLASHLIGHT', price = 0 },
+			{ name = 'WEAPON_COLBATON', price = 0 },
+			{ name = 'WEAPON_GLOCK20', price = 0 },
+			{ name = 'WEAPON_STUNGUN', price = 0 },
+			{ name = 'WEAPON_FM1_BENELLIM4', price = 0 },
+			{ name = 'WEAPON_FLASHBANG', price = 0 },
+
+			{ name = 'WEAPON_DD14_B', price = 0 },
+			{ name = 'at_scope_ddm4_holo_b', price = 0 },
+			{ name = 'at_grip_bcm_b', price = 0 },
+			{ name = 'at_sfs14_b', price = 0 },
 		}, locations = {
-			vec3(451.51, -979.44, 30.68)
+			vec3(479.88, -996.76, 31.68),
+			vec3(-3165.68, 1116.72, 22.24),
 		}, targets = {
-			{ loc = vec3(453.21, -980.03, 30.68), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 }
+			{ loc = vec3(479.88, -996.76, 30.68), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 },
+			{ loc = vec3(-3165.68, 1116.72, 21.24), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 },
 		}
 	},
 
@@ -136,21 +152,6 @@ return {
 			{ name = 'bandage', price = 5 }
 		}, locations = {
 			vec3(306.3687, -601.5139, 43.28406)
-		}, targets = {
-
-		}
-	},
-
-	BlackMarketArms = {
-		name = 'Black Market (Arms)',
-		inventory = {
-			{ name = 'WEAPON_DAGGER', price = 5000, metadata = { registered = false	}, currency = 'black_money' },
-			{ name = 'WEAPON_CERAMICPISTOL', price = 50000, metadata = { registered = false }, currency = 'black_money' },
-			{ name = 'at_suppressor_light', price = 50000, currency = 'black_money' },
-			{ name = 'ammo-rifle', price = 1000, currency = 'black_money' },
-			{ name = 'ammo-rifle2', price = 1000, currency = 'black_money' }
-		}, locations = {
-			vec3(309.09, -913.75, 56.46)
 		}, targets = {
 
 		}
