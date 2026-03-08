@@ -117,8 +117,9 @@ return {
 			{ name = 'ammo-rifle', price = 0 },
 			{ name = 'ammo-shotgun', price = 0 },
 			{ name = 'at_flashlight', price = 0 },
-			{ name = 'binoculars', price = 0 },
 			{ name = 'armour', price = 0 },
+			{ name = 'defib', price = 0 },
+			{ name = 'medbag', price = 0 },
 			{ name = 'WEAPON_PROLASER4', price = 0 },
 			{ name = 'WEAPON_FLASHLIGHT', price = 0 },
 			{ name = 'WEAPON_COLBATON', price = 0 },
@@ -126,6 +127,12 @@ return {
 			{ name = 'WEAPON_STUNGUN', price = 0 },
 			{ name = 'WEAPON_FM1_BENELLIM4', price = 0 },
 			{ name = 'WEAPON_FLASHBANG', price = 0 },
+
+			{ name = 'shield', price = 0 },
+			{ name = 'spikestrip', price = 0 },
+			{ name = 'cuffs', price = 0 },
+			{ name = 'zipties', price = 0 },
+			{ name = 'handcuffkey', price = 0 },
 
 			{ name = 'WEAPON_DD14_B', price = 0 },
 			{ name = 'at_scope_ddm4_holo_b', price = 0 },
