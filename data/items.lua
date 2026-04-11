@@ -8,7 +8,7 @@ return {
         label = 'Burger',
         weight = 220,
         client = {
-            status = { hunger = 468000 },
+            status = { hunger = 368000 },
             anim = 'eating',
             prop = 'burger',
             usetime = 2500,
@@ -20,7 +20,7 @@ return {
         label = 'Sprunk',
         weight = 350,
         client = {
-            status = { thirst = 468000 },
+            status = { thirst = 368000 },
             anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
             prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
             usetime = 2500,
@@ -103,7 +103,7 @@ return {
         label = 'Water',
         weight = 500,
         client = {
-            status = { thirst = 468000 },
+            status = { thirst = 368000 },
             anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
             prop = { model = `prop_ld_flow_bottle`, pos = vec3(0.03, 0.03, 0.02), rot = vec3(0.0, 0.0, -1.5) },
             usetime = 2500,
@@ -929,6 +929,342 @@ return {
     client = {
         image = "rentalpapers.png",
     },
+    },
+
+
+        ['toaster'] = {
+		label = 'Toaster',
+		weight = 1000,
+	},
+    ['boombox'] = {
+		label = 'Boom box',
+		weight = 1000,
+	},
+    ['television1'] = {
+		label = 'Old Tv',
+		weight = 4000,
+	},
+    ['vcr'] = {
+		label = 'Videocassette Recorder',
+		weight = 2000,
+	},
+    ['television2'] = {
+		label = 'Flat Tv',
+		weight = 2500,
+	},
+    ['console'] = {
+		label = 'Console',
+		weight = 1000,
+	},
+    ['microwave'] = {
+		label = 'Micro Wave',
+		weight = 5000,
+	},
+    ['breachingdevice'] = {
+		label = 'Breaching Device',
+		weight = 5000,
+	},
+    ["engine_oil"] = {
+    label = "Engine Oil",
+    weight = 1000,
+  },
+  ["tyre_replacement"] = {
+    label = "Tyre Replacement",
+    weight = 1000,
+  },
+  ["clutch_replacement"] = {
+    label = "Clutch Replacement",
+    weight = 1000,
+  },
+  ["air_filter"] = {
+    label = "Air Filter",
+    weight = 100,
+  },
+  ["spark_plug"] = {
+    label = "Spark Plug",
+    weight = 1000,
+  },
+  ["brakepad_replacement"] = {
+    label = "Brakepad Replacement",
+    weight = 1000,
+  },
+  ["suspension_parts"] = {
+    label = "Suspension Parts",
+    weight = 1000,
+  },
+  -- Engine Items
+  ["i4_engine"] = {
+    label = "I4 Engine",
+    weight = 1000,
+  },
+  ["v6_engine"] = {
+    label = "V6 Engine",
+    weight = 1000,
+  },
+  ["v8_engine"] = {
+    label = "V8 Engine",
+    weight = 1000,
+  },
+  ["v12_engine"] = {
+    label = "V12 Engine",
+    weight = 1000,
+  },
+  ["turbocharger"] = {
+    label = "Turbocharger",
+    weight = 1000,
+  },
+  -- Electric Engines
+  ["ev_motor"] = {
+    label = "EV Motor",
+    weight = 1000,
+  },
+  ["ev_battery"] = {
+    label = "EV Battery",
+    weight = 1000,
+  },
+  ["ev_coolant"] = {
+    label = "EV Coolant",
+    weight = 1000,
+  },
+  -- Drivetrain Items
+  ["awd_drivetrain"] = {
+    label = "AWD Drivetrain",
+    weight = 1000,
+  },
+  ["rwd_drivetrain"] = {
+    label = "RWD Drivetrain",
+    weight = 1000,
+  },
+  ["fwd_drivetrain"] = {
+    label = "FWD Drivetrain",
+    weight = 1000,
+  },
+  -- Tuning Items
+  ["slick_tyres"] = {
+    label = "Slick Tyres",
+    weight = 1000,
+  },
+  ["semi_slick_tyres"] = {
+    label = "Semi Slick Tyres",
+    weight = 1000,
+  },
+  ["offroad_tyres"] = {
+    label = "Offroad Tyres",
+    weight = 1000,
+  },
+  ["drift_tuning_kit"] = {
+    label = "Drift Tuning Kit",
+    weight = 1000,
+  },
+  ["ceramic_brakes"] = {
+    label = "Ceramic Brakes",
+    weight = 1000,
+  },
+  -- Cosmetic Items
+  ["lighting_controller"] = {
+    label = "Lighting Controller",
+    weight = 100,
+    client = {
+      event = "jg-mechanic:client:show-lighting-controller",
+    }
+  },
+  ["stancing_kit"] = {
+    label = "Stancer Kit",
+    weight = 100,
+    client = {
+      event = "jg-mechanic:client:show-stancer-kit",
+    }
+  },
+  ["cosmetic_part"] = {
+    label = "Cosmetic Parts",
+    weight = 100,
+  },
+  ["respray_kit"] = {
+    label = "Respray Kit",
+    weight = 1000,
+  },
+  ["vehicle_wheels"] = {
+    label = "Vehicle Wheels Set",
+    weight = 1000,
+  },
+  ["tyre_smoke_kit"] = {
+    label = "Tyre Smoke Kit",
+    weight = 1000,
+  },
+  ["bulletproof_tyres"] = {
+    label = "Bulletproof Tyres",
+    weight = 1000,
+  },
+  ["extras_kit"] = {
+    label = "Extras Kit",
+    weight = 1000,
+  },
+  -- Nitrous & Cleaning Items
+  ["nitrous_bottle"] = {
+    label = "Nitrous Bottle",
+    weight = 1000,
+    client = {
+      event = "jg-mechanic:client:use-nitrous-bottle",
+    }
+  },
+  ["empty_nitrous_bottle"] = {
+    label = "Empty Nitrous Bottle",
+    weight = 1000,
+  },
+  ["nitrous_install_kit"] = {
+    label = "Nitrous Install Kit",
+    weight = 1000,
+  },
+  ["cleaning_kit"] = {
+    label = "Cleaning Kit",
+    weight = 1000,
+    client = {
+      event = "jg-mechanic:client:clean-vehicle",
+    }
+  },
+  ["repair_kit"] = {
+    label = "Repair Kit",
+    weight = 1000,
+    client = {
+      event = "jg-mechanic:client:repair-vehicle",
+    }
+  },
+  ["duct_tape"] = {
+    label = "Duct Tape",
+    weight = 1000,
+    client = {
+      event = "jg-mechanic:client:use-duct-tape",
+    }
+  },
+  -- Performance Item
+  ["performance_part"] = {
+    label = "Performance Parts",
+    weight = 1000,
+  },
+  -- Mechanic Tablet Item
+  ["mechanic_tablet"] = {
+    label = "Mechanic Tablet",
+    weight = 1000,
+    client = {
+      event = "jg-mechanic:client:use-tablet",
+    }
+  },
+  -- Gearbox
+  ["manual_gearbox"] = {
+    label = "Manual Gearbox",
+    weight = 1000,
+  },
+  ['house_key'] = {
+    label = 'Housing Key',
+    weight = 10,
+    stack = false,
+    close = true,
+},
+['lockpick'] = {
+    label = 'Lockpick',
+    weight = 800,
+    stack = true,
+    close = true,
+},
+['police_barrier'] = {
+    label = 'Police Barrier',
+    weight = 300,
+    stack = true,
+    close = true,
+},
+['police_stormram'] = {
+    label = 'Police Storm Ram',
+    weight = 5000,
+    stack = true,
+    close = true,
+},
+['pliers'] = {
+    label = 'Pliers',
+    weight = 500,
+    stack = true,
+    close = true,
+},
+['insulating_tape'] = {
+    label = 'Insulating Tape',
+    weight = 200,
+    stack = true,
+    close = true,
+},
+
+    ['skining_knife'] = {
+        label = 'Skining Knife',
+        weight = 200,
+        stack = true,
+    },
+    ['boar_meat'] = {
+        label = 'Boar Meat',
+        weight = 500,
+        stack = true,
+    },
+    ['boar_skin'] = {
+        label = 'Boar Skin',
+        weight = 700,
+        stack = true,
+    },
+    ['deer_meat'] = {
+        label = 'Deer Meat',
+        weight = 600,
+        stack = true,
+    },
+    ['deer_skin'] = {
+        label = 'Deer Skin',
+        weight = 800,
+        stack = true,
+    },
+    ['coyote_meat'] = {
+        label = 'Coyote Meat',
+        weight = 400,
+        stack = true,
+    },
+    ['coyote_skin'] = {
+        label = 'Coyote Skin',
+        weight = 600,
+        stack = true,
+    },
+    ['rabbit_meat'] = {
+        label = 'Rabbit Meat',
+        weight = 300,
+        stack = true,
+    },
+    ['rabbit_skin'] = {
+        label = 'Rabbit Skin',
+        weight = 400,
+        stack = true,
+    },
+    ['cow_meat'] = {
+        label = 'Cow Meat',
+        weight = 1000,
+        stack = true,
+    },
+    ['cow_skin'] = {
+        label = 'Cow Skin',
+        weight = 1200,
+        stack = true,
+    },
+    ['chicken_meat'] = {
+        label = 'Chicken Meat',
+        weight = 1000,
+        stack = true,
+    },
+    ['chicken_skin'] = {
+	   label = 'Chicken Skin',
+	   weight = 100,
+	   stack = true,
+    },
+	['pig_meat'] = {
+        label = 'Pig Meat',
+        weight = 500,
+        stack = true,
+    },
+	['pig_skin'] = {
+        label = 'Pig Skin',
+        weight = 300,
+        stack = true,
     },
 
 }

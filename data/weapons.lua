@@ -594,7 +594,7 @@ return {
 		},
 
 		['WEAPON_GLOCK20'] = {
-			label = 'Glock 20Pistol',
+			label = 'Glock 20 Pistol',
 			weight = 1200,
 			durability = 0.1,
 			ammoname = 'ammo-9',

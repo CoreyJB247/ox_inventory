@@ -19,7 +19,6 @@ return {
 			vec3(2679.25, 3280.12, 55.24),
 			vec3(2557.94, 382.05, 108.62),
 			vec3(373.55, 325.56, 103.56),
-			vec3(268.88, -978.96, 30.6),
 			vec3(-47.84, -1758.28, 30.48),
 			vec3(292.12, -1278.52, 30.68),
 			vec3(1164.28, -323.8, 70.24),
@@ -37,7 +36,7 @@ return {
 			vec3(377.88, -1786.52, 30.52),
 		}, targets = {
 			{ loc = vec3(25.06, -1347.32, 29.5), length = 0.7, width = 0.5, heading = 0.0, minZ = 29.5, maxZ = 29.9, distance = 1.5 },
-			{ loc = vec3(-3039.18, 585.13, 7.91), length = 0.6, width = 0.5, heading = 15.0, minZ = 7.91, maxZ = 8.31, distance = 1.5 },
+			{ loc = vec3(-3039.18, 585.13, 8.05), length = 0.6, width = 0.5, heading = 15.0, minZ = 7.91, maxZ = 8.31, distance = 1.5 },
 			{ loc = vec3(-3242.2, 1000.58, 12.83), length = 0.6, width = 0.6, heading = 175.0, minZ = 12.83, maxZ = 13.23, distance = 1.5 },
 			{ loc = vec3(1728.39, 6414.95, 35.04), length = 0.6, width = 0.6, heading = 65.0, minZ = 35.04, maxZ = 35.44, distance = 1.5 },
 			{ loc = vec3(1698.37, 4923.43, 42.06), length = 0.5, width = 0.5, heading = 235.0, minZ = 42.06, maxZ = 42.46, distance = 1.5 },
@@ -46,7 +45,6 @@ return {
 			{ loc = vec3(2678.29, 3279.94, 55.24), length = 0.6, width = 0.5, heading = 330.0, minZ = 55.24, maxZ = 55.64, distance = 1.5 },
 			{ loc = vec3(2557.19, 381.4, 108.62), length = 0.6, width = 0.5, heading = 0.0, minZ = 108.62, maxZ = 109.02, distance = 1.5 },
 			{ loc = vec3(373.13, 326.29, 103.57), length = 0.6, width = 0.5, heading = 345.0, minZ = 103.57, maxZ = 103.97, distance = 1.5 },
-			{ loc = vec3(268.88, -978.96, 29.6), length = 0.6, width = 0.5, heading = 345.0, minZ = 103.57, maxZ = 103.97, distance = 1.5 },
 			{ loc = vec3(-47.84, -1758.28, 29.38), length = 0.6, width = 0.5, heading = 345.0, minZ = 103.57, maxZ = 103.97, distance = 1.5 },
 			{ loc = vec3(292.12, -1278.52, 29.58), length = 0.6, width = 0.5, heading = 345.0, minZ = 103.57, maxZ = 103.97, distance = 1.5 },
 			{ loc = vec3(1164.28, -323.8, 69.14), length = 0.6, width = 0.5, heading = 345.0, minZ = 103.57, maxZ = 103.97, distance = 1.5 },
@@ -82,6 +80,8 @@ return {
 			{ name = 'WEAPON_WRENCH', price = 25 },
 			{ name = 'WEAPON_FLASHLIGHT', price = 20 },
 			{ name = 'WEAPON_CROWBAR', price = 15 },
+			{ name = 'cleaning_kit', price = 15 },
+			{ name = 'repair_kit', price = 30 },
 		}, locations = {
 			vec3(53.4, -1748.48, 30.52),
 		}, targets = {
@@ -131,6 +131,11 @@ return {
 			{ name = 'WEAPON_WRENCH', price = 25 },
 			{ name = 'WEAPON_FLASHLIGHT', price = 20 },
 			{ name = 'WEAPON_CROWBAR', price = 15 },
+
+			{ name = 'nitrous_bottle', price = 150 },
+			{ name = 'nitrous_install_kit', price = 800 },
+			{ name = 'cleaning_kit', price = 15 },
+			{ name = 'repair_kit', price = 30 },
 		}, locations = {
 			vec3(2748.0, 3473.0, 55.67),
 			vec3(342.99, -1298.26, 32.51)
@@ -142,13 +147,16 @@ return {
 	Ammunation = {
 		name = 'Ammunation',
 		blip = {
-			id = 110, colour = 69, scale = 0.8
+			id = 110, colour = 1, scale = 0.8
 		}, inventory = {
 			{ name = 'ammo-9', price = 5, },
+			{ name = 'ammo-flare', price = 15, },
+			{ name = 'skining_knife', price = 20 },
 			{ name = 'WEAPON_KNIFE', price = 200 },
 			{ name = 'WEAPON_FLASHLIGHT', price = 20 },
 			{ name = 'WEAPON_BAT', price = 100 },
-			{ name = 'WEAPON_PISTOL', price = 1000, metadata = { registered = true } }
+			{ name = 'WEAPON_PISTOL', price = 1000, metadata = { registered = true } },
+			{ name = 'WEAPON_FLAREGUN', price = 80 },
 		}, locations = {
 			vec3(-662.180, -934.961, 21.829),
 			vec3(810.25, -2157.60, 29.62),
@@ -158,7 +166,8 @@ return {
 			vec3(22.56, -1109.89, 29.80),
 			vec3(2567.69, 294.38, 108.73),
 			vec3(-1117.58, 2698.61, 18.55),
-			vec3(842.44, -1033.42, 28.19)
+			vec3(842.44, -1033.42, 28.19),
+			vec3(-1304.96, -394.76, 37.76),
 		}, targets = {
 			{ loc = vec3(-660.92, -934.10, 21.94), length = 0.6, width = 0.5, heading = 180.0, minZ = 21.8, maxZ = 22.2, distance = 2.0 },
 			{ loc = vec3(808.86, -2158.50, 29.73), length = 0.6, width = 0.5, heading = 360.0, minZ = 29.6, maxZ = 30.0, distance = 2.0 },
@@ -168,7 +177,8 @@ return {
 			{ loc = vec3(23.68, -1106.46, 29.91), length = 0.6, width = 0.5, heading = 160.0, minZ = 29.8, maxZ = 30.2, distance = 2.0 },
 			{ loc = vec3(2566.59, 293.13, 108.85), length = 0.6, width = 0.5, heading = 360.0, minZ = 108.7, maxZ = 109.1, distance = 2.0 },
 			{ loc = vec3(-1117.61, 2700.26, 18.67), length = 0.6, width = 0.5, heading = 221.82, minZ = 18.5, maxZ = 18.9, distance = 2.0 },
-			{ loc = vec3(841.05, -1034.76, 28.31), length = 0.6, width = 0.5, heading = 360.0, minZ = 28.2, maxZ = 28.6, distance = 2.0 }
+			{ loc = vec3(841.05, -1034.76, 28.31), length = 0.6, width = 0.5, heading = 360.0, minZ = 28.2, maxZ = 28.6, distance = 2.0 },
+			{ loc = vec3(-1304.96, -394.76, 36.4), length = 0.6, width = 0.5, heading = 360.0, minZ = 28.2, maxZ = 28.6, distance = 2.0 },
 		}
 	},
 
@@ -181,34 +191,38 @@ return {
 			{ name = 'ammo-9', price = 0 },
 			{ name = 'ammo-rifle', price = 0 },
 			{ name = 'ammo-shotgun', price = 0 },
-			{ name = 'at_flashlight', price = 0 },
 			{ name = 'armour', price = 0 },
 			{ name = 'defib', price = 0 },
 			{ name = 'medbag', price = 0 },
 			{ name = 'WEAPON_PROLASER4', price = 0 },
 			{ name = 'WEAPON_FLASHLIGHT', price = 0 },
 			{ name = 'WEAPON_COLBATON', price = 0 },
-			{ name = 'WEAPON_GLOCK20', price = 0 },
+			{ name = 'WEAPON_GLOCK20', price = 0, metadata = { components = { 'at_flashlight', }, } },
+			{ name = 'WEAPON_DD14_B', price = 0, metadata = { components = { 'at_scope_ddm4_holo_b', 'at_grip_bcm_b', 'at_sfs14_b' }, } },
+			{ name = 'WEAPON_FM1_BENELLIM4', price = 0, metadata = { components = { 'at_flashlight', }, } },
 			{ name = 'WEAPON_STUNGUN', price = 0 },
-			{ name = 'WEAPON_FM1_BENELLIM4', price = 0 },
 			{ name = 'WEAPON_FLASHBANG', price = 0 },
-
 			{ name = 'shield', price = 0 },
 			{ name = 'spikestrip', price = 0 },
 			{ name = 'cuffs', price = 0 },
 			{ name = 'zipties', price = 0 },
 			{ name = 'handcuffkey', price = 0 },
-
-			{ name = 'WEAPON_DD14_B', price = 0 },
-			{ name = 'at_scope_ddm4_holo_b', price = 0 },
-			{ name = 'at_grip_bcm_b', price = 0 },
-			{ name = 'COMPONENT_AT_SCOPE_SMALL', price = 0 },
+			{ name = 'cleaning_kit', price = 0 },
+			{ name = 'repair_kit', price = 0 },
 		}, locations = {
-			vec3(452.52, -980.08, 31.92),
-			vec3(-3165.68, 1116.72, 22.24),
+			vec3(479.72, -996.68, 31.76),
+			vec3(838.6, -1282.2, 22.28),
+			vec3(-594.64, -100.56, 34.92),
+			vec3(1529.84, 807.4, 73.2),
+			vec3(1822.2, 3679.68, 35.4),
+			vec3(-432.12, 6000.28, 29.24),
 		}, targets = {
-			{ loc = vec3(453.28, -980.0, 30.68), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 },
-			{ loc = vec3(-3165.68, 1116.72, 21.24), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 },
+			{ loc = vec3(479.72, -996.68, 30.76), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 },
+			{ loc = vec3(838.6, -1282.2, 21.28), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 },
+			{ loc = vec3(-594.64, -100.56, 33.5), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 },
+			{ loc = vec3(1529.84, 807.4, 72.2), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 },
+			{ loc = vec3(1822.2, 3679.68, 34.1), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 },
+			{ loc = vec3(-432.12, 6000.28, 28.2), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 },
 		}
 	},
 
